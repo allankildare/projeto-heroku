@@ -6,4 +6,4 @@ app.get('/', (req, res) => {
     res.send("Tô rodando no Heroku!")
 })
 
-app.listen(port, `[info] Rodando na porta ${port}`)
+app.listen(port, () => console.log(`[info] Rodando na porta ${port}`))
